@@ -1,11 +1,12 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
-START
-  SET productCount = 2
-  WHILE productCount <= 50
-    OUTPUT productCount
-    INCREMENT productCount by 2
-  ENDWHILE
-END
+def product_package_counter():
+    product_count = 2
 
+    while product_count <= 50:
+        print(product_count)
+        product_count += 2
+
+product_package_counter()
+
+# ------------------------------------------------- #
