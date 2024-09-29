@@ -1,4 +1,11 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+START
+  SET productCount = 2
+  WHILE productCount <= 50
+    OUTPUT productCount
+    INCREMENT productCount by 2
+  ENDWHILE
+END
 
