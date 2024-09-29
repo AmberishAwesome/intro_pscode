@@ -1,4 +1,27 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
+START
+  SET currentPosition = starting point of the warehouse
+  SET targetPosition = location of the desired spot in the warehouse
+  
+  WHILE currentPosition != targetPosition
+    PROMPT customer for direction (north, south, east, west)
+    GET direction from customer
+    IF direction == "north" THEN
+      MOVE customer north
+    ELSE IF direction == "south" THEN
+      MOVE customer south
+    ELSE IF direction == "east" THEN
+      MOVE customer east
+    ELSE IF direction == "west" THEN
+      MOVE customer west
+    ELSE
+      OUTPUT "Invalid direction, try again."
+    ENDIF
+    UPDATE currentPosition
+  ENDWHILE
+  OUTPUT "You have reached the target location!"
+END
+
 # ------------------------------------------------- #
 

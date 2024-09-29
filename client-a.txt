@@ -1,4 +1,23 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
+START
+  SET randomNumber = generate random number between 1 and 10
+  SET attempts = 0
+  WHILE attempts < 3
+    PROMPT player to guess a number between 1 and 10
+    GET player's guess
+    IF player's guess == randomNumber THEN
+      OUTPUT "Congratulations! You guessed the correct number."
+      BREAK the loop
+    ELSE
+      OUTPUT "Incorrect guess."
+      INCREMENT attempts by 1
+    ENDIF
+  ENDWHILE
+  IF attempts == 3 THEN
+    OUTPUT "Sorry, you've used all attempts. The correct number was " + randomNumber
+  ENDIF
+END
+
 # ------------------------------------------------- #
 
